@@ -1,0 +1,9 @@
+html {
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+img {
+    pointer-events: none;
+}

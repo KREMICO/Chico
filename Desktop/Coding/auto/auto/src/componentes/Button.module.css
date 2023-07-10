@@ -1,0 +1,22 @@
+.wrapper {
+    background-color:#222;
+    width: 9rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 9px 9px 7px -8px rgba(0,0,0,0.25);
+
+    transition: all 200ms;
+}
+
+a {
+    text-decoration: none;
+    color:#eee;
+    font-weight: bold;
+}
+
+.wrapper:hover {
+    background-color: #333;
+}

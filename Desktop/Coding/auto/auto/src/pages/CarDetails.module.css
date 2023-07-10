@@ -1,0 +1,193 @@
+.headertitle {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: block;
+    color:#999;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.carrousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carImg {
+    width: 33rem;
+    margin-top:1rem;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 9px 9px 7px -8px rgba(0,0,0,0.20);
+    transition: width 200ms;
+    
+}
+
+.arrows {
+    background-color: transparent;
+    flex-direction: row;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    width: 25rem;
+}
+
+.leftDiv, .rightDiv {
+    cursor: pointer;
+}
+
+
+
+
+.carInfoWrapper {
+    display: flex;
+    padding: 3rem 6rem;
+    gap: 2rem;
+    color:#222;
+    padding-bottom:5rem;
+}
+
+
+.name {
+    font-weight:bold;
+    font-size:2.3rem;
+    margin-top:3rem;
+}
+
+.nameMobile {
+    font-weight:bold;
+    font-size:2.3rem;
+    margin-top:3rem;
+    display: none;
+}
+
+.arrowyear {
+    display: flex;
+    align-items: center;
+    margin-top:1.2rem;
+}
+
+.year {
+    color:#333;
+    font-size: 1.3rem;
+    margin-left:0.8rem;
+    
+}
+
+.price {
+    font-weight: bold;
+    font-size: 2rem;
+    color:#333;
+    letter-spacing: 0.2px;
+    margin-top:1.5rem;
+    margin-left: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.desc {
+    color: #333;
+    margin:0.8rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+.title, .title2 {
+    margin:3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color:#222;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.10);
+}
+
+.title2 {
+    margin-top: 3rem;
+    margin-bottom: 2.2rem;
+}
+
+.sliderPage {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+
+.page, .pageActive {
+    background-color: #222;
+    transition: all 200ms;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    box-shadow: 9px 9px 7px -8px rgba(0,0,0,0.40);
+}
+
+.page {
+    cursor: pointer;
+}
+
+.pageActive {
+    background-color: #999;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .headertitle {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .carInfoWrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .nameMobile {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    .carImg {
+        width: 20rem;
+    }
+
+    .arrows {
+        width: 12rem;
+    }
+
+    .nameMobile {
+        font-size: 2rem;
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+
+    .carInfoWrapper {
+        padding:1rem;
+    }
+}
+
+.nonexistant {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.errorwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
